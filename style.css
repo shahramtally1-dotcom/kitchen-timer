@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f5f1e8;
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-app {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #666;
+}
+
+.display {
+  margin: 28px 0;
+  font-size: clamp(4.5rem, 18vw, 7rem);
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 110px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.buttons,
+.presets {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #e9e9e9;
+  color: #222;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: #dcdcdc;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.primary {
+  background: #2f7d5c;
+  color: white;
+}
+
+.primary:hover {
+  background: #266b4d;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+.message {
+  min-height: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 24px 16px;
+  }
+
+  .inputs {
+    gap: 8px;
+  }
+
+  input {
+    width: 100px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .presets button {
+    width: 100%;
+  }
+}

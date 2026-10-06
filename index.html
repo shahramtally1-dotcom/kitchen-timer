@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="timer-app">
+    <div class="card">
+      <h1>Kitchen Timer</h1>
+      <p class="subtitle">Simple countdown timer</p>
+
+      <div class="display" id="display" aria-live="polite">00:00</div>
+
+      <div class="inputs">
+        <div>
+          <label for="minutes">Minutes</label>
+          <input type="number" id="minutes" min="0" max="99" value="0">
+        </div>
+        <div>
+          <label for="seconds">Seconds</label>
+          <input type="number" id="seconds" min="0" max="59" value="0">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn" class="primary">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <h2>Presets</h2>
+
+      <div class="presets">
+        <button data-minutes="3" data-seconds="0">🍵 3 min Tea</button>
+        <button data-minutes="10" data-seconds="0">🍚 10 min Rice</button>
+        <button data-minutes="20" data-seconds="0">⏱️ 20 min</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
